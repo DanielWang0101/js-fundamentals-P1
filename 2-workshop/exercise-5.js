@@ -11,7 +11,6 @@ function exercise5() {
     if (number % 2) {
       console.log(number);
     }
-    console.log(number);
   }
   // -----------------------------------------------------------------
   // Edit only the code between the lines (above)

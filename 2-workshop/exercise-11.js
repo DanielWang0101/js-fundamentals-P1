@@ -15,6 +15,19 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let p = '#';
+  let d = '_';
+
+    for(let i=0; i<8; i++){
+      if(i%2===0){
+        let row = p+d+p+d+p+d+p+d;
+        console.log(row);
+      }else{
+        let row = d+p+d+p+d+p+d+p;
+        console.log(row);
+      }
+    }
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

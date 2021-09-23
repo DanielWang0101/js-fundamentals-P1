@@ -15,6 +15,16 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  function isPrime(x){
+    for (let y=2; y<=x; y++){
+      if(x===2) console.log(2);
+      else if(x%y===0) return false;
+      else console.log(x);
+    }
+  }
+  for(let x=2; x<201; x++){
+    isPrime(x);
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
