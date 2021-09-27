@@ -15,16 +15,24 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
-  function isPrime(x){
-    for (let y=2; y<=x; y++){
-      if(x===2) console.log(2);
-      else if(x%y===0) return false;
-      else console.log(x);
+  let result = [];
+  for (let i = 1; i <= 200; i++) {
+    let flag = 0;
+
+    // looping through 2 to user input number
+    for (let j = 2; j < i; j++) {
+      if (i % j == 0) {
+        flag = 1;
+        break;
+      }
+    }
+
+    // if number greater than 1 and not divisible by other numbers
+    if (i > 1 && flag == 0) {
+      result.push(i);
     }
   }
-  for(let x=2; x<201; x++){
-    isPrime(x);
-  }
+  return console.log(result);
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

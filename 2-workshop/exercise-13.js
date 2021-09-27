@@ -20,6 +20,13 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+
+  let result = [0, 1];
+  for (let i = 0; i < 50; i++) {
+    let sum = result[i] + result[i + 1];
+    result.push(sum);
+  }
+  console.log(result[49]);
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
